@@ -1,0 +1,17 @@
+<md-toolbar color="primary">
+	<button md-button
+	        routerLink="/dashboard">
+        <md-icon>explore</md-icon>&nbsp;
+        <span class="brand">UI Project</span>
+    </button>
+	<span class="spacer"></span>
+	<button md-button>
+        Sign in
+    </button>
+</md-toolbar>
+
+<section>
+	<router-outlet></router-outlet>
+</section>
+
+<simple-notifications [options]="options"></simple-notifications>
